@@ -19,12 +19,6 @@ These user stories represent long term goals for the application, and will be mo
 3. As a user, I would like to view changes in datasets over time so that I can visualize the change in a neighborhood.
 4. As a user, I would like to be able to save trends in data so that I can more easily identify other neighborhoods undergoing the same changes.
 
-## ERDs
-
-The following is the Entity Relationship Diagram for the first version of this app, this will likely change as more features are added.
-
-![ERDs version 1](erdv1.jpg)
-
 ## Wireframes
 
 ![Wireframes version 1](wireframesv1.jpg)
