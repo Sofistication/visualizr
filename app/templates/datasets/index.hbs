@@ -1,5 +1,5 @@
 <h3>All Datasets</h3>
 
 {{#each model as |dataset|}}
-  <h5>{{dataset.name}}: {{dataset.year}}</h5>
+  {{visualizr-dataset dataset=dataset}}
 {{/each}}
