@@ -11,6 +11,7 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('datasets', function() {});
+  this.route('dataset', { path: '/datasets/:dataset_id' });
 });
 
 export default Router;
