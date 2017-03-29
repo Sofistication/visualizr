@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('users');
   this.route('datasets', function() {});
   this.route('dataset', { path: '/datasets/:dataset_id' });
+  this.route('visualizations');
 });
 
 export default Router;

@@ -1,0 +1,5 @@
+<h3>Your saved Visualizations</h3>
+{{#each model as |viz|}}
+  {{visualizr-dataset/summary dataset=viz.dataset }}
+{{/each}}
+{{outlet}}
