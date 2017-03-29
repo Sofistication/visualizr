@@ -1,7 +1,7 @@
 {
   "name": "visualizr",
   "version": "0.0.0",
-  "description": "ember auth training",
+  "description": "app for visualizing datasets",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -25,6 +25,7 @@
     "active-model-adapter": "^2.1.1",
     "broccoli-asset-rev": "^2.5.0",
     "ember-ajax": "^2.5.3",
+    "ember-charts": "^1.2.1",
     "ember-cli": "^2.10.0",
     "ember-cli-app-version": "^2.0.1",
     "ember-cli-autoprefixer": "^0.6.0",
