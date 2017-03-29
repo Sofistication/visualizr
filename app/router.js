@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('datasets', function() {});
   this.route('dataset', { path: '/datasets/:dataset_id' });
   this.route('visualizations');
+  this.route('visualization', { path: '/visualizations/:visualization_id' }, function() {});
 });
 
 export default Router;
