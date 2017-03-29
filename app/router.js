@@ -11,7 +11,9 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('datasets', function () {});
-  this.route('dataset', { path: '/datasets/:dataset_id' }, function() {});
+  this.route('dataset', { path: '/datasets/:dataset_id' }, function() {
+    this.route('save');
+  });
   this.route('visualizations', function() {});
   this.route('visualization', { path: '/visualizations/:visualization_id' }, function() {});
 });
