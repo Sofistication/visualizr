@@ -4,8 +4,9 @@
 
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
-        {{#if isAuthenticated}}
         <li>{{#link-to "datasets"}}View Datasets{{/link-to}}</li>
+        {{#if isAuthenticated}}
+        <li>{{#link-to "visualizations"}}Saved Visualizations{{/link-to}}</li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
