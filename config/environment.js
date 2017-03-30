@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.rootURL = '/visualizr';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://boiling-caverns-23969.herokuapp.com/';
+    ENV.apiHost = 'https://boiling-caverns-23969.herokuapp.com';
   }
 
   return ENV;
