@@ -1,6 +1,6 @@
 <h3>{{model.name}}</h3>
 <h4>Year: {{model.year}}</h4>
 <h5>Properties by Zipcode. Times saved: {{model.saved}}</h5>
-{{#link-to 'dataset.save' dataset}}<p>Customize this visualization!</p>{{/link-to}}
+{{#link-to 'dataset.save' model}}<p>Customize this visualization!</p>{{/link-to}}
 
 {{visualizr-dataset/graph dataset=model color='#000000'}}
