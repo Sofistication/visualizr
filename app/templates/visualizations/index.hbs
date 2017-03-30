@@ -1,7 +1,9 @@
 <h3>Your saved Visualizations</h3>
 {{#each model as |viz|}}
-  <p>{{viz.dataset.name}}: {{viz.dataset.year}}</p>
-  {{#link-to 'visualization' viz}}
-    <button class="btn btn-primary btn-sm">View Visualization</button>
-  {{/link-to}}
+  {{#if viz.editable}}
+    <p>{{viz.dataset.name}}: {{viz.dataset.year}}</p>
+    {{#link-to 'visualization' viz}}
+      <button class="btn btn-primary btn-sm">View Visualization</button>
+    {{/link-to}}
+  {{/if}}
 {{/each}}

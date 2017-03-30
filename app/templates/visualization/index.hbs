@@ -2,6 +2,8 @@
 <h4>Year: {{model.dataset.year}}</h4>
 <h5>Properties by Zipcode.</h5>
 
-{{#link-to 'visualization.edit' model}}Edit your saved visualization.{{/link-to}}
+{{#if model.editable}}
+  {{#link-to 'visualization.edit' model}}Edit your saved visualization.{{/link-to}}
+{{/if}}
 
 {{visualizr-dataset/graph dataset=model.dataset color=model.color}}
