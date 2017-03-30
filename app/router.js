@@ -18,6 +18,7 @@ Router.map(function () {
   this.route('visualization', { path: '/visualizations/:visualization_id' }, function() {
     this.route('edit');
   });
+  this.route('*wildcard');
 });
 
 export default Router;

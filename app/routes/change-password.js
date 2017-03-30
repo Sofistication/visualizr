@@ -7,6 +7,10 @@ export default Ember.Route.extend({
   actions: {
     changePassword (passwords) {
       this.get('auth').changePassword(passwords)
+      .then(() => {
+        passwords.previous = null;
+        passwords.next = null;
+      })
       .then(() => this.get('auth').signOut())
       .then(() => this.transitionTo('sign-in'))
       .then(() => {

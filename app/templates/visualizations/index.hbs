@@ -1,7 +1,18 @@
-<h3>Your saved Visualizations</h3>
-{{#each model as |viz|}}
-  <p>{{viz.dataset.name}}: {{viz.dataset.year}}</p>
-  {{#link-to 'visualization' viz}}
-    <button class="btn btn-primary btn-sm">View Visualization</button>
-  {{/link-to}}
-{{/each}}
+<div class="col-md-6 col-md-offset-3">
+  <h3>Your saved Visualizations</h3>
+  <ul class="list-group">
+    {{#each model as |viz|}}
+      {{#if viz.editable}}
+        <li class="list-group-item">
+          <p>{{viz.dataset.name}}: {{viz.dataset.year}}</p>
+          <div class="row">
+            {{#link-to 'visualization' viz}}
+              <button class="btn btn-primary btn-sm">View Visualization</button>
+            {{/link-to}}
+            <button class="btn btn-danger btn-sm" {{action "delete" viz}}>Delete Visualization</button>
+          </div>
+        </li>
+      {{/if}}
+    {{/each}}
+  </ul>
+</div>
