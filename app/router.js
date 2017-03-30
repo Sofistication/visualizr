@@ -15,7 +15,9 @@ Router.map(function () {
     this.route('save');
   });
   this.route('visualizations', function() {});
-  this.route('visualization', { path: '/visualizations/:visualization_id' }, function() {});
+  this.route('visualization', { path: '/visualizations/:visualization_id' }, function() {
+    this.route('edit');
+  });
 });
 
 export default Router;
