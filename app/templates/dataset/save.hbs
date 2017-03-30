@@ -1,0 +1,12 @@
+<h3>Customize visualization for {{model.name}} {{model.year}}</h3>
+<div class="form-group">
+  <label for="graph-color">Graph color</label>
+  {{input type="text"
+          class="form-control"
+          id="graph-color"
+          placeholder="Enter a hex code!"
+          value=color}}
+</div>
+<button class="btn btn-info btn-sm" {{action "createVisualization" color model on="click"}}>Save</button>
+
+{{visualizr-dataset/graph dataset=model color=color}}

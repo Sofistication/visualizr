@@ -10,8 +10,14 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
-  this.route('datasets', function() {});
-  this.route('dataset', { path: '/datasets/:dataset_id' });
+  this.route('datasets', function () {});
+  this.route('dataset', { path: '/datasets/:dataset_id' }, function() {
+    this.route('save');
+  });
+  this.route('visualizations', function() {});
+  this.route('visualization', { path: '/visualizations/:visualization_id' }, function() {
+    this.route('edit');
+  });
 });
 
 export default Router;
