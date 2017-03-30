@@ -1,6 +1,15 @@
-<p>{{dataset.name}}: {{dataset.year}}</p>
-{{#if isAuthenticated}}
-  {{#link-to 'dataset' dataset}}
-    <button class="btn btn-primary btn-sm">View Dataset</button>
-  {{/link-to}}
-{{/if}}
+<li class="list-group-item">
+  <div class="row">
+    <div class="col-xs-8">
+      <p>{{dataset.name}}: {{dataset.year}}</p>
+    </div>
+    <div class="col-xs-4">
+      <span class="badge">Times saved: {{dataset.saved}}</span>
+    </div>
+  </div>
+  {{#if isAuthenticated}}
+    {{#link-to 'dataset' dataset}}
+      <button class="btn btn-primary btn-sm">View Dataset</button>
+    {{/link-to}}
+  {{/if}}
+</li>
