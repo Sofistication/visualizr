@@ -5,9 +5,12 @@
       {{#if viz.editable}}
         <li class="list-group-item">
           <p>{{viz.dataset.name}}: {{viz.dataset.year}}</p>
-          {{#link-to 'visualization' viz}}
-            <button class="btn btn-primary btn-sm">View Visualization</button>
-          {{/link-to}}
+          <div class="row">
+            {{#link-to 'visualization' viz}}
+              <button class="btn btn-primary btn-sm">View Visualization</button>
+            {{/link-to}}
+            <button class="btn btn-danger btn-sm" {{action "delete" viz}}>Delete Visualization</button>
+          </div>
         </li>
       {{/if}}
     {{/each}}
