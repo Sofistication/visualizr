@@ -5,6 +5,11 @@ export default Ember.Component.extend({
     color: ''
   },
 
+  init() {
+    this._super(...arguments);
+    this.set('newViz.color', '');
+  },
+
   actions: {
     save (model) {
       let data = this.get('newViz');
