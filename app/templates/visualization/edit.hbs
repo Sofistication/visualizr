@@ -1,4 +1,7 @@
 <h3>Customize saved visualization for {{model.dataset.name}} {{model.dataset.year}}</h3>
+{{#link-to 'visualization' model}}
+  <span class="btn btn-info btn-sm">Back</span>
+{{/link-to}}
 <div class="form-group">
   <label for="graph-color">Graph color</label>
   {{input type="text"
