@@ -6,6 +6,12 @@ Visualizr is an app designed to allow users to easily create graphs and other vi
 
 ![screenshot of edit](visualizr-screenshot.png)
 
+## Links
+
+- FRONT END DEPLOYED: https://sofistication.github.io/visualizr/
+- BACK END REPO: https://github.com/Sofistication/visualizr-api
+- BACK END DEPLOYED: https://boiling-caverns-23969.herokuapp.com/
+
 ## User Stories
 
 1. As a user, I want to log into my account so that I can access my data.
