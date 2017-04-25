@@ -1,6 +1,13 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
 
+$black: #000;
+
 h2 {
   text-align: center;
+}
+
+body {
+  background-image: url('http://www.bostonplans.org/getattachment/71f1265e-a8eb-4acb-83e5-28c640e683d7/');
+  background-size: cover;
 }
