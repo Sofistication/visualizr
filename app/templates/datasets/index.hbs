@@ -1,8 +1,10 @@
-<div class="col-md-6 col-md-offset-3">
-  <h3>All Datasets</h3>
-  <ul class="list-group">
-    {{#each model as |dataset|}}
-        {{visualizr-dataset/summary dataset=dataset}}
-    {{/each}}
-  </ul>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h3>All Datasets</h3>
+    <ul class="list-group">
+      {{#each model as |dataset|}}
+          {{visualizr-dataset/summary dataset=dataset}}
+      {{/each}}
+    </ul>
+  </div>
 </div>

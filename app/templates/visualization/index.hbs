@@ -2,7 +2,7 @@
 <h4>Year: {{model.dataset.year}}</h4>
 
 {{#if model.editable}}
-  {{#link-to 'visualization.edit' model}}Edit your saved visualization.{{/link-to}}
+  {{#link-to 'visualization.edit' model}}<p>Edit your saved visualization.</p>{{/link-to}}
 {{/if}}
 
 {{visualizr-dataset/graph dataset=model.dataset color=model.color}}
